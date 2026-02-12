@@ -1,1 +1,1 @@
-This is my textual data analysis projects
+This is my textual data analysis projects in Python
