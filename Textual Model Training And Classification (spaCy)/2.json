@@ -1,0 +1,14 @@
+[
+  {"utterance": "I want to upgrade my internet plan", "intent": "upgrade_plan"},
+  {"utterance": "How can I cancel my subscription?", "intent": "cancel_service"},
+  {"utterance": "My internet is not working", "intent": "technical_issue"},
+  {"utterance": "Can I change my billing date?", "intent": "billing_question"},
+  {"utterance": "What are your available plans?", "intent": "inquire_plans"},
+  {"utterance": "Schedule a technician visit", "intent": "technician_request"},
+  {"utterance": "I want to downgrade my package", "intent": "downgrade_plan"},
+  {"utterance": "How much is the premium plan?", "intent": "pricing_info"},
+  {"utterance": "I need help with setting up the router", "intent": "technical_issue"},
+  {"utterance": "Cancel my premium subscription", "intent": "cancel_service"},
+  {"utterance": "Show me your pricing options", "intent": "pricing_info"},
+  {"utterance": "When will the technician arrive?", "intent": "technician_request"}
+]

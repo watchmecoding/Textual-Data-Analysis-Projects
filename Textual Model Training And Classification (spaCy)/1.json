@@ -1,0 +1,19 @@
+[
+  {"text": "The patient was diagnosed with pneumonia.", "entities": [[31, 40, "DISEASE"]]},
+  {"text": "He suffers from chronic asthma.", "entities": [[16, 30, "DISEASE"]]},
+  {"text": "She was treated for breast cancer.", "entities": [[27, 33, "DISEASE"]]},
+  {"text": "The doctor confirmed a diagnosis of diabetes.", "entities": [[36, 44, "DISEASE"]]},
+  {"text": "They are treating him for hypertension.", "entities": [[26, 38, "DISEASE"]]},
+
+  {"text": "The child was diagnosed with measles.", "entities": [[30, 37, "DISEASE"]]},
+  {"text": "He has a long history of tuberculosis.", "entities": [[24, 36, "DISEASE"]]},
+  {"text": "She is being treated for anemia.", "entities": [[26, 32, "DISEASE"]]},
+  {"text": "The symptoms indicate a case of influenza.", "entities": [[30, 39, "DISEASE"]]},
+  {"text": "He was hospitalized due to meningitis.", "entities": [[29, 39, "DISEASE"]]},
+
+  {"text": "She is recovering from hepatitis C.", "entities": [[24, 35, "DISEASE"]]},
+  {"text": "The man was diagnosed with Parkinson's disease.", "entities": [[30, 49, "DISEASE"]]},
+  {"text": "Doctors are monitoring her for epilepsy.", "entities": [[32, 40, "DISEASE"]]},
+  {"text": "He takes medication for high cholesterol.", "entities": [[26, 43, "DISEASE"]]},
+  {"text": "The test results show signs of arthritis.", "entities": [[33, 42, "DISEASE"]]}
+]

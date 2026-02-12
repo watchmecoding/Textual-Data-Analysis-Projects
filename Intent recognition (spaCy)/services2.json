@@ -1,0 +1,6012 @@
+[
+  {
+    "dialogue_id": "29_00000",
+    "services": [
+      "Services_2"
+    ],
+    "turns": [
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "Cupertino"
+                ],
+                "slot": "city",
+                "values": [
+                  "Cupertino"
+                ]
+              },
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "FindProvider"
+                ],
+                "slot": "intent",
+                "values": [
+                  "FindProvider"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 37,
+                "slot": "city",
+                "start": 28
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Cupertino"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Please find me a dentist in Cupertino."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Cabanas Carol L"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Cabanas Carol L"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Cupertino"
+                ],
+                "slot": "city",
+                "values": [
+                  "Cupertino"
+                ]
+              },
+              {
+                "act": "INFORM_COUNT",
+                "canonical_values": [
+                  "4"
+                ],
+                "slot": "count",
+                "values": [
+                  "4"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "Cupertino"
+              }
+            },
+            "service_results": [
+              {
+                "address": "10101 North Wolfe Road",
+                "city": "Cupertino",
+                "dentist_name": "Cabanas Carol L",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-996-9567"
+              },
+              {
+                "address": "10011 North Foothill Boulevard # 112",
+                "city": "Cupertino",
+                "dentist_name": "Donna M Cotner",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-255-2550"
+              },
+              {
+                "address": "10011 North Foothill Boulevard",
+                "city": "Cupertino",
+                "dentist_name": "Dr. Brian W. Chun",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-255-8882"
+              },
+              {
+                "address": "19668 Stevens Creek Boulevard",
+                "city": "Cupertino",
+                "dentist_name": "Wang Jen-Kuei",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-257-8838"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 68,
+                "slot": "dentist_name",
+                "start": 53
+              },
+              {
+                "exclusive_end": 95,
+                "slot": "city",
+                "start": 86
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Okay, I found 4 dentists in the area. Would you like Cabanas Carol L it is located in Cupertino."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "17:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "5:30 in the evening"
+                ]
+              },
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "BookAppointment"
+                ],
+                "slot": "intent",
+                "values": [
+                  "BookAppointment"
+                ]
+              },
+              {
+                "act": "SELECT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 103,
+                "slot": "appointment_time",
+                "start": 84
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_time": [
+                  "5:30 in the evening"
+                ],
+                "city": [
+                  "Cupertino"
+                ],
+                "dentist_name": [
+                  "Cabanas Carol L"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes that sounds good I have to make an appointment, is there anything available for 5:30 in the evening?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "appointment_date",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "what day would you like the appointment?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-12"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "12th of March"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 17,
+                "slot": "appointment_date",
+                "start": 4
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "12th of March"
+                ],
+                "appointment_time": [
+                  "5:30 in the evening"
+                ],
+                "city": [
+                  "Cupertino"
+                ],
+                "dentist_name": [
+                  "Cabanas Carol L"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "The 12th of March would be perfect."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "Cabanas Carol L"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Cabanas Carol L"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "17:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "5:30 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-12"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "March 12th"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 89,
+                "slot": "dentist_name",
+                "start": 74
+              },
+              {
+                "exclusive_end": 68,
+                "slot": "appointment_time",
+                "start": 61
+              },
+              {
+                "exclusive_end": 57,
+                "slot": "appointment_date",
+                "start": 47
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Okay please confirm; appointment scheduled for March 12th at 5:30 pm with Cabanas Carol L. Is that correct?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "AFFIRM",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "12th of March",
+                  "March 12th"
+                ],
+                "appointment_time": [
+                  "5:30 in the evening",
+                  "5:30 pm"
+                ],
+                "city": [
+                  "Cupertino"
+                ],
+                "dentist_name": [
+                  "Cabanas Carol L"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes, that is correct."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "NOTIFY_SUCCESS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "BookAppointment",
+              "parameters": {
+                "appointment_date": "2019-03-12",
+                "appointment_time": "17:30",
+                "dentist_name": "Cabanas Carol L"
+              }
+            },
+            "service_results": [
+              {
+                "address": "10101 North Wolfe Road",
+                "appointment_date": "2019-03-12",
+                "appointment_time": "17:30",
+                "dentist_name": "Cabanas Carol L",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-996-9567"
+              }
+            ],
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Okay, your dentist appointment has been scheduled."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              },
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "12th of March",
+                  "March 12th"
+                ],
+                "appointment_time": [
+                  "5:30 in the evening",
+                  "5:30 pm"
+                ],
+                "city": [
+                  "Cupertino"
+                ],
+                "dentist_name": [
+                  "Cabanas Carol L"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Great, thank you for your help."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "You're welcome, have a nice day."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "29_00001",
+    "services": [
+      "Services_2"
+    ],
+    "turns": [
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "FindProvider"
+                ],
+                "slot": "intent",
+                "values": [
+                  "FindProvider"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {}
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "My tooth has been hurting lately, where can I find a dentist?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "city",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "I'll look for a dentist's office. Which city should I search in?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "Sunnyvale"
+                ],
+                "slot": "city",
+                "values": [
+                  "Sunnyvale"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 17,
+                "slot": "city",
+                "start": 8
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Sunnyvale"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Look in Sunnyvale."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Amazing Smile Dental"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Amazing Smile Dental"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Sunnyvale"
+                ],
+                "slot": "city",
+                "values": [
+                  "Sunnyvale"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "Sunnyvale"
+              }
+            },
+            "service_results": [
+              {
+                "address": "689 East Remington Drive Ste A",
+                "city": "Sunnyvale",
+                "dentist_name": "Amazing Smile Dental",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-739-6520"
+              },
+              {
+                "address": "990 West Fremont Avenue j",
+                "city": "Sunnyvale",
+                "dentist_name": "Andrei Simel , Family & Cosmetic Dentisry",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-992-0840"
+              },
+              {
+                "address": "990 West Fremont Avenue",
+                "city": "Sunnyvale",
+                "dentist_name": "Boyer Dental Arts",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-523-4030"
+              },
+              {
+                "address": "860 East Remington Drive",
+                "city": "Sunnyvale",
+                "dentist_name": "Bruce Schwartz",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-245-3410"
+              },
+              {
+                "address": "990 W Fremont Ave # R",
+                "city": "Sunnyvale",
+                "dentist_name": "Chandiok Neena K",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-530-8014"
+              },
+              {
+                "address": "990 W Fremont Ave # A",
+                "city": "Sunnyvale",
+                "dentist_name": "Cisneros Rob M",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-738-0656"
+              },
+              {
+                "address": "570 East El Camino Real # C",
+                "city": "Sunnyvale",
+                "dentist_name": "D Sign Dental Lab",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-735-8985"
+              },
+              {
+                "address": "877 W Fremont Ave # D3",
+                "city": "Sunnyvale",
+                "dentist_name": "Dentalcare Westgate",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-379-7700"
+              },
+              {
+                "address": "990 W Fremont Ave # J",
+                "city": "Sunnyvale",
+                "dentist_name": "Dr. Andrei Simel",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-992-0633"
+              },
+              {
+                "address": "1309 South Mary Avenue",
+                "city": "Sunnyvale",
+                "dentist_name": "Dr. David I. Thompson",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-736-3602"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 53,
+                "slot": "dentist_name",
+                "start": 33
+              },
+              {
+                "exclusive_end": 66,
+                "slot": "city",
+                "start": 57
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "I found a dentist's office named Amazing Smile Dental in Sunnyvale."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "BookAppointment"
+                ],
+                "slot": "intent",
+                "values": [
+                  "BookAppointment"
+                ]
+              },
+              {
+                "act": "SELECT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Sunnyvale"
+                ],
+                "dentist_name": [
+                  "Amazing Smile Dental"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yeah I'd like to see a dentist at that one."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "appointment_date",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "When would you like to book your appointment?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-10"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "10th of March"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "12:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "12:30 in the afternoon"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 28,
+                "slot": "appointment_date",
+                "start": 15
+              },
+              {
+                "exclusive_end": 58,
+                "slot": "appointment_time",
+                "start": 36
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "10th of March"
+                ],
+                "appointment_time": [
+                  "12:30 in the afternoon"
+                ],
+                "city": [
+                  "Sunnyvale"
+                ],
+                "dentist_name": [
+                  "Amazing Smile Dental"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Book it on the 10th of March around 12:30 in the afternoon."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "Amazing Smile Dental"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Amazing Smile Dental"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "12:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "12:30 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-10"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "March 10th"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 74,
+                "slot": "dentist_name",
+                "start": 54
+              },
+              {
+                "exclusive_end": 86,
+                "slot": "appointment_time",
+                "start": 78
+              },
+              {
+                "exclusive_end": 100,
+                "slot": "appointment_date",
+                "start": 90
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Would you like to confirm booking an appointment with Amazing Smile Dental at 12:30 pm on March 10th?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-07"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "the 7th"
+                ]
+              },
+              {
+                "act": "NEGATE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 32,
+                "slot": "appointment_date",
+                "start": 25
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "the 7th"
+                ],
+                "appointment_time": [
+                  "12:30 in the afternoon",
+                  "12:30 pm"
+                ],
+                "city": [
+                  "Sunnyvale"
+                ],
+                "dentist_name": [
+                  "Amazing Smile Dental"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Actually, no. Book it on the 7th."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "12:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "12:30 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-07"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "next Thursday"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 43,
+                "slot": "appointment_time",
+                "start": 35
+              },
+              {
+                "exclusive_end": 57,
+                "slot": "appointment_date",
+                "start": 44
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Okay. That appointment would be at 12:30 pm next Thursday. Is that okay?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "16:00"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "4 o\"clock in the evening"
+                ]
+              },
+              {
+                "act": "NEGATE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 59,
+                "slot": "appointment_time",
+                "start": 35
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "next Thursday",
+                  "the 7th"
+                ],
+                "appointment_time": [
+                  "4 o\"clock in the evening"
+                ],
+                "city": [
+                  "Sunnyvale"
+                ],
+                "dentist_name": [
+                  "Amazing Smile Dental"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "No. Is there anything available at 4 o\"clock in the evening?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "Amazing Smile Dental"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Amazing smile Dental"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "16:00"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "4 pm"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 79,
+                "slot": "dentist_name",
+                "start": 59
+              },
+              {
+                "exclusive_end": 87,
+                "slot": "appointment_time",
+                "start": 83
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Yes. Would you like to confirm booking an appointment with Amazing smile Dental at 4 pm?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "AFFIRM",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "next Thursday",
+                  "the 7th"
+                ],
+                "appointment_time": [
+                  "4 o\"clock in the evening",
+                  "4 pm"
+                ],
+                "city": [
+                  "Sunnyvale"
+                ],
+                "dentist_name": [
+                  "Amazing Smile Dental",
+                  "Amazing smile Dental"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yeah"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "NOTIFY_SUCCESS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "BookAppointment",
+              "parameters": {
+                "appointment_date": "2019-03-07",
+                "appointment_time": "16:00",
+                "dentist_name": "Amazing Smile Dental"
+              }
+            },
+            "service_results": [
+              {
+                "address": "689 East Remington Drive Ste A",
+                "appointment_date": "2019-03-07",
+                "appointment_time": "16:00",
+                "dentist_name": "Amazing Smile Dental",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-739-6520"
+              }
+            ],
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Your dentist appointment has been successfully booked!"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "address",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [
+                "address"
+              ],
+              "slot_values": {
+                "appointment_date": [
+                  "next Thursday",
+                  "the 7th"
+                ],
+                "appointment_time": [
+                  "4 o\"clock in the evening",
+                  "4 pm"
+                ],
+                "city": [
+                  "Sunnyvale"
+                ],
+                "dentist_name": [
+                  "Amazing Smile Dental",
+                  "Amazing smile Dental"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Where are they at again?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "689 East Remington Drive Ste A"
+                ],
+                "slot": "address",
+                "values": [
+                  "689 East Remington Drive Ste A"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 50,
+                "slot": "address",
+                "start": 20
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "They are located at 689 East Remington Drive Ste A."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "offers_cosmetic_services",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [
+                "offers_cosmetic_services"
+              ],
+              "slot_values": {
+                "appointment_date": [
+                  "next Thursday",
+                  "the 7th"
+                ],
+                "appointment_time": [
+                  "4 o\"clock in the evening",
+                  "4 pm"
+                ],
+                "city": [
+                  "Sunnyvale"
+                ],
+                "dentist_name": [
+                  "Amazing Smile Dental",
+                  "Amazing smile Dental"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Do they do cosmetic services too?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "False"
+                ],
+                "slot": "offers_cosmetic_services",
+                "values": [
+                  "False"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Unfortunately, they do not offer cosmetic services."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              },
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "next Thursday",
+                  "the 7th"
+                ],
+                "appointment_time": [
+                  "4 o\"clock in the evening",
+                  "4 pm"
+                ],
+                "city": [
+                  "Sunnyvale"
+                ],
+                "dentist_name": [
+                  "Amazing Smile Dental",
+                  "Amazing smile Dental"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Alright thank you, that's all I need."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "No problem! Have a good day."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "29_00002",
+    "services": [
+      "Services_2"
+    ],
+    "turns": [
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "True"
+                ],
+                "slot": "offers_cosmetic_services",
+                "values": [
+                  "True"
+                ]
+              },
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "FindProvider"
+                ],
+                "slot": "intent",
+                "values": [
+                  "FindProvider"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "offers_cosmetic_services": [
+                  "True"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "I've been wanting to fix my crooked teeth for a while. Can you find me a good dentist that practices cosmetic dentistry."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "city",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Which city do you want the dentist to be located in?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "Antioch"
+                ],
+                "slot": "city",
+                "values": [
+                  "Antioch"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 43,
+                "slot": "city",
+                "start": 36
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Antioch"
+                ],
+                "offers_cosmetic_services": [
+                  "True"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "I'd prefer for the dentist to be in Antioch."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Antioch"
+                ],
+                "slot": "city",
+                "values": [
+                  "Antioch"
+                ]
+              },
+              {
+                "act": "INFORM_COUNT",
+                "canonical_values": [
+                  "1"
+                ],
+                "slot": "count",
+                "values": [
+                  "1"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "Antioch",
+                "offers_cosmetic_services": "True"
+              }
+            },
+            "service_results": [
+              {
+                "address": "3107 Lone Tree Way",
+                "city": "Antioch",
+                "dentist_name": "Dr. Keller & Dr. Burk - Antioch Premier Dental",
+                "offers_cosmetic_services": "True",
+                "phone_number": "925-757-5081"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 92,
+                "slot": "dentist_name",
+                "start": 46
+              },
+              {
+                "exclusive_end": 122,
+                "slot": "city",
+                "start": 115
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "I found only 1 dentist. How do you feel about Dr. Keller & Dr. Burk - Antioch Premier Dental whose premises are in Antioch."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "phone_number",
+                "values": []
+              },
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "address",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [
+                "address",
+                "phone_number"
+              ],
+              "slot_values": {
+                "city": [
+                  "Antioch"
+                ],
+                "offers_cosmetic_services": [
+                  "True"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "What's their address and phone number?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "3107 Lone Tree Way"
+                ],
+                "slot": "address",
+                "values": [
+                  "3107 Lone Tree Way"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "925-757-5081"
+                ],
+                "slot": "phone_number",
+                "values": [
+                  "925-757-5081"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 35,
+                "slot": "address",
+                "start": 17
+              },
+              {
+                "exclusive_end": 76,
+                "slot": "phone_number",
+                "start": 64
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Their address is 3107 Lone Tree Way and their contact number is 925-757-5081."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "SELECT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Antioch"
+                ],
+                "dentist_name": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ],
+                "offers_cosmetic_services": [
+                  "True"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes, I think I'll go to them."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER_INTENT",
+                "canonical_values": [
+                  "BookAppointment"
+                ],
+                "slot": "intent",
+                "values": [
+                  "BookAppointment"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Do you want me to book you an appointment for your visit?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "AFFIRM_INTENT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "13:45"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "1:45 PM"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 19,
+                "slot": "appointment_time",
+                "start": 12
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_time": [
+                  "1:45 PM"
+                ],
+                "city": [
+                  "Antioch"
+                ],
+                "dentist_name": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ],
+                "offers_cosmetic_services": [
+                  "True"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes please. 1:45 PM would be perfect if there's a slot then."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "appointment_date",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "What date do you want to book for?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-06"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "March 6th"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 9,
+                "slot": "appointment_date",
+                "start": 0
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "March 6th"
+                ],
+                "appointment_time": [
+                  "1:45 PM"
+                ],
+                "city": [
+                  "Antioch"
+                ],
+                "dentist_name": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ],
+                "offers_cosmetic_services": [
+                  "True"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "March 6th, please."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "13:45"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "1:45 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-06"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "next Wednesday"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 97,
+                "slot": "dentist_name",
+                "start": 51
+              },
+              {
+                "exclusive_end": 108,
+                "slot": "appointment_time",
+                "start": 101
+              },
+              {
+                "exclusive_end": 123,
+                "slot": "appointment_date",
+                "start": 109
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Confirm if this is ok for you: an appointment with Dr. Keller & Dr. Burk - Antioch Premier Dental at 1:45 pm next Wednesday."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "11:45"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "quarter to 12 in the morning"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-10"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "the 10th"
+                ]
+              },
+              {
+                "act": "NEGATE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 83,
+                "slot": "appointment_time",
+                "start": 55
+              },
+              {
+                "exclusive_end": 95,
+                "slot": "appointment_date",
+                "start": 87
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "the 10th"
+                ],
+                "appointment_time": [
+                  "quarter to 12 in the morning"
+                ],
+                "city": [
+                  "Antioch"
+                ],
+                "dentist_name": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ],
+                "offers_cosmetic_services": [
+                  "True"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "No, I've changed my mind. Is there a slot available at quarter to 12 in the morning on the 10th?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "11:45"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "11:45 am"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-10"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "March 10th"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 47,
+                "slot": "appointment_time",
+                "start": 39
+              },
+              {
+                "exclusive_end": 61,
+                "slot": "appointment_date",
+                "start": 51
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Confirm that you want an appointment a 11:45 am on March 10th."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "AFFIRM",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "March 10th",
+                  "the 10th"
+                ],
+                "appointment_time": [
+                  "11:45 am",
+                  "quarter to 12 in the morning"
+                ],
+                "city": [
+                  "Antioch"
+                ],
+                "dentist_name": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ],
+                "offers_cosmetic_services": [
+                  "True"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Perfect."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "NOTIFY_SUCCESS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "BookAppointment",
+              "parameters": {
+                "appointment_date": "2019-03-10",
+                "appointment_time": "11:45",
+                "dentist_name": "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+              }
+            },
+            "service_results": [
+              {
+                "address": "3107 Lone Tree Way",
+                "appointment_date": "2019-03-10",
+                "appointment_time": "12:00",
+                "dentist_name": "Dr. Keller & Dr. Burk - Antioch Premier Dental",
+                "offers_cosmetic_services": "True",
+                "phone_number": "925-757-5081"
+              }
+            ],
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Great, your appointment is booked."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              },
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "March 10th",
+                  "the 10th"
+                ],
+                "appointment_time": [
+                  "11:45 am",
+                  "quarter to 12 in the morning"
+                ],
+                "city": [
+                  "Antioch"
+                ],
+                "dentist_name": [
+                  "Dr. Keller & Dr. Burk - Antioch Premier Dental"
+                ],
+                "offers_cosmetic_services": [
+                  "True"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Thanks for your help."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Have a great day. Thanks."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "29_00003",
+    "services": [
+      "Services_2"
+    ],
+    "turns": [
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "Petaluma"
+                ],
+                "slot": "city",
+                "values": [
+                  "Petaluma"
+                ]
+              },
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "FindProvider"
+                ],
+                "slot": "intent",
+                "values": [
+                  "FindProvider"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 37,
+                "slot": "city",
+                "start": 29
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Petaluma"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Can you find me a dentist in Petaluma."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Dr Oscar Ventanilla"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Dr Oscar Ventanilla"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Petaluma"
+                ],
+                "slot": "city",
+                "values": [
+                  "Petaluma"
+                ]
+              },
+              {
+                "act": "INFORM_COUNT",
+                "canonical_values": [
+                  "6"
+                ],
+                "slot": "count",
+                "values": [
+                  "6"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "Petaluma"
+              }
+            },
+            "service_results": [
+              {
+                "address": "1580 East Washington Street # 105",
+                "city": "Petaluma",
+                "dentist_name": "Dr Oscar Ventanilla",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-763-6381"
+              },
+              {
+                "address": "599 Tomales Road",
+                "city": "Petaluma",
+                "dentist_name": "Dr. Christopher J. Bennett",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-765-7591"
+              },
+              {
+                "address": "1580 East Washington Street # 105",
+                "city": "Petaluma",
+                "dentist_name": "Dr. Robert S. Gilbert",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-763-1959"
+              },
+              {
+                "address": "1580 East Washington Street #101",
+                "city": "Petaluma",
+                "dentist_name": "North Bay Smiles",
+                "offers_cosmetic_services": "True",
+                "phone_number": "707-763-4122"
+              },
+              {
+                "address": "1580 East Washington Street # 107",
+                "city": "Petaluma",
+                "dentist_name": "Petaluma Dental Associates",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-778-9000"
+              },
+              {
+                "address": "1580 E Washington St # 108",
+                "city": "Petaluma",
+                "dentist_name": "Professional Dental Laboratories",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-762-0751"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 37,
+                "slot": "dentist_name",
+                "start": 18
+              },
+              {
+                "exclusive_end": 75,
+                "slot": "city",
+                "start": 67
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "I found 6 of them Dr Oscar Ventanilla sounds good he is located in Petaluma."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "San Jose"
+                ],
+                "slot": "city",
+                "values": [
+                  "San Jose"
+                ]
+              },
+              {
+                "act": "REQUEST_ALTS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 31,
+                "slot": "city",
+                "start": 23
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "San Jose"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "I want someone else in San Jose."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "A J Dental Lab"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "A J Dental Lab"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "San Jose"
+                ],
+                "slot": "city",
+                "values": [
+                  "San Jose"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "San Jose"
+              }
+            },
+            "service_results": [
+              {
+                "address": "2664 Berryessa Road # 206",
+                "city": "San Jose",
+                "dentist_name": "A J Dental Lab",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-316-8226"
+              },
+              {
+                "address": "2664 Berryessa Road # 205",
+                "city": "San Jose",
+                "dentist_name": "A-1 Dental Care",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-258-6669"
+              },
+              {
+                "address": "2664 Berryessa Road # 212",
+                "city": "San Jose",
+                "dentist_name": "Abad Dental Office",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-272-3809"
+              },
+              {
+                "address": "2664 Berryessa Road # 202",
+                "city": "San Jose",
+                "dentist_name": "Aitchison, Bernard",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-259-1632"
+              },
+              {
+                "address": "5595 Winfield Boulevard # 102",
+                "city": "San Jose",
+                "dentist_name": "Almaden Dental Care",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-224-5200"
+              },
+              {
+                "address": "5710 Cahalan Avenue # 8L",
+                "city": "San Jose",
+                "dentist_name": "Alpha Dental",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-578-4600"
+              },
+              {
+                "address": "5150 Graves Avenue # 11E",
+                "city": "San Jose",
+                "dentist_name": "Arts Of Dentistry",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-873-7737"
+              },
+              {
+                "address": "2664 Berryessa Road",
+                "city": "San Jose",
+                "dentist_name": "Bautista Maximilian",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-272-2330"
+              },
+              {
+                "address": "2664 Berryessa Road # 102",
+                "city": "San Jose",
+                "dentist_name": "Belle Dental",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-254-0888"
+              },
+              {
+                "address": "2664 Berryessa Road # 106",
+                "city": "San Jose",
+                "dentist_name": "Berryessa Oral Surgery Spec",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-729-9000"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 19,
+                "slot": "dentist_name",
+                "start": 5
+              },
+              {
+                "exclusive_end": 31,
+                "slot": "city",
+                "start": 23
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Does A J Dental Lab in San Jose sound good?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "phone_number",
+                "values": []
+              },
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "address",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [
+                "address",
+                "phone_number"
+              ],
+              "slot_values": {
+                "city": [
+                  "San Jose"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "What is their number and their address?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "408-316-8226"
+                ],
+                "slot": "phone_number",
+                "values": [
+                  "408-316-8226"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2664 Berryessa Road # 206"
+                ],
+                "slot": "address",
+                "values": [
+                  "2664 Berryessa Road # 206"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 28,
+                "slot": "phone_number",
+                "start": 16
+              },
+              {
+                "exclusive_end": 73,
+                "slot": "address",
+                "start": 48
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Their number is 408-316-8226 and the address is 2664 Berryessa Road # 206."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-02"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "tomorrow"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "14:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "half past 2 in the afternoon"
+                ]
+              },
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "BookAppointment"
+                ],
+                "slot": "intent",
+                "values": [
+                  "BookAppointment"
+                ]
+              },
+              {
+                "act": "SELECT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 48,
+                "slot": "appointment_date",
+                "start": 40
+              },
+              {
+                "exclusive_end": 90,
+                "slot": "appointment_time",
+                "start": 62
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "tomorrow"
+                ],
+                "appointment_time": [
+                  "half past 2 in the afternoon"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "I would like to book an appointment for tomorrow something at half past 2 in the afternoon if possible."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "A J Dental Lab"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "A J Dental Lab"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "14:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "2:30 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-02"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "tomorrow"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 61,
+                "slot": "dentist_name",
+                "start": 47
+              },
+              {
+                "exclusive_end": 73,
+                "slot": "appointment_time",
+                "start": 66
+              },
+              {
+                "exclusive_end": 82,
+                "slot": "appointment_date",
+                "start": 74
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Just to make sure you want an appointment with A J Dental Lab for 2:30 pm tomorrow?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "AFFIRM",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "tomorrow"
+                ],
+                "appointment_time": [
+                  "2:30 pm",
+                  "half past 2 in the afternoon"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes that is right."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "NOTIFY_SUCCESS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "BookAppointment",
+              "parameters": {
+                "appointment_date": "2019-03-02",
+                "appointment_time": "14:30",
+                "dentist_name": "A J Dental Lab"
+              }
+            },
+            "service_results": [
+              {
+                "address": "2664 Berryessa Road # 206",
+                "appointment_date": "2019-03-02",
+                "appointment_time": "14:30",
+                "dentist_name": "A J Dental Lab",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-316-8226"
+              }
+            ],
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Great I booked your dentist appointment for you."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              },
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "tomorrow"
+                ],
+                "appointment_time": [
+                  "2:30 pm",
+                  "half past 2 in the afternoon"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Thanks for your help I'm good for now."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Have a great day thanks."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "29_00004",
+    "services": [
+      "Services_2"
+    ],
+    "turns": [
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "FindProvider"
+                ],
+                "slot": "intent",
+                "values": [
+                  "FindProvider"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {}
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Find me a dentist."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "city",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "What city?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "San Jose"
+                ],
+                "slot": "city",
+                "values": [
+                  "San Jose"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 8,
+                "slot": "city",
+                "start": 0
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "San Jose"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "San Jose."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "A J Dental Lab"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "A J Dental lab"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "San Jose"
+                ],
+                "slot": "city",
+                "values": [
+                  "San Jose"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "San Jose"
+              }
+            },
+            "service_results": [
+              {
+                "address": "2664 Berryessa Road # 206",
+                "city": "San Jose",
+                "dentist_name": "A J Dental Lab",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-316-8226"
+              },
+              {
+                "address": "2664 Berryessa Road # 205",
+                "city": "San Jose",
+                "dentist_name": "A-1 Dental Care",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-258-6669"
+              },
+              {
+                "address": "2664 Berryessa Road # 212",
+                "city": "San Jose",
+                "dentist_name": "Abad Dental Office",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-272-3809"
+              },
+              {
+                "address": "2664 Berryessa Road # 202",
+                "city": "San Jose",
+                "dentist_name": "Aitchison, Bernard",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-259-1632"
+              },
+              {
+                "address": "5595 Winfield Boulevard # 102",
+                "city": "San Jose",
+                "dentist_name": "Almaden Dental Care",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-224-5200"
+              },
+              {
+                "address": "5710 Cahalan Avenue # 8L",
+                "city": "San Jose",
+                "dentist_name": "Alpha Dental",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-578-4600"
+              },
+              {
+                "address": "5150 Graves Avenue # 11E",
+                "city": "San Jose",
+                "dentist_name": "Arts Of Dentistry",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-873-7737"
+              },
+              {
+                "address": "2664 Berryessa Road",
+                "city": "San Jose",
+                "dentist_name": "Bautista Maximilian",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-272-2330"
+              },
+              {
+                "address": "2664 Berryessa Road # 102",
+                "city": "San Jose",
+                "dentist_name": "Belle Dental",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-254-0888"
+              },
+              {
+                "address": "2664 Berryessa Road # 106",
+                "city": "San Jose",
+                "dentist_name": "Berryessa Oral Surgery Spec",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-729-9000"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 14,
+                "slot": "dentist_name",
+                "start": 0
+              },
+              {
+                "exclusive_end": 37,
+                "slot": "city",
+                "start": 29
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "A J Dental lab is located in San Jose."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "offers_cosmetic_services",
+                "values": []
+              },
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "phone_number",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [
+                "offers_cosmetic_services",
+                "phone_number"
+              ],
+              "slot_values": {
+                "city": [
+                  "San Jose"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Do they offer cosmetic services and what is their number?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "False"
+                ],
+                "slot": "offers_cosmetic_services",
+                "values": [
+                  "False"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "408-316-8226"
+                ],
+                "slot": "phone_number",
+                "values": [
+                  "408-316-8226"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 76,
+                "slot": "phone_number",
+                "start": 64
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "No they don't offer cosmetic services and their phone number is 408-316-8226."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-02"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "2nd of this month"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "14:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "2:30 pm"
+                ]
+              },
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "BookAppointment"
+                ],
+                "slot": "intent",
+                "values": [
+                  "BookAppointment"
+                ]
+              },
+              {
+                "act": "SELECT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 48,
+                "slot": "appointment_date",
+                "start": 31
+              },
+              {
+                "exclusive_end": 59,
+                "slot": "appointment_time",
+                "start": 52
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "2nd of this month"
+                ],
+                "appointment_time": [
+                  "2:30 pm"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Book me an appointment for the 2nd of this month at 2:30 pm."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "A J Dental Lab"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "A J Dental Lab"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "14:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "2:30 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-02"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "tomorrow"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 57,
+                "slot": "dentist_name",
+                "start": 43
+              },
+              {
+                "exclusive_end": 81,
+                "slot": "appointment_time",
+                "start": 74
+              },
+              {
+                "exclusive_end": 70,
+                "slot": "appointment_date",
+                "start": 62
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Confirm you want to book an appointment at A J Dental Lab for tomorrow at 2:30 pm."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-08"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "March 8th"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "11:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "morning 11:30"
+                ]
+              },
+              {
+                "act": "NEGATE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 21,
+                "slot": "appointment_date",
+                "start": 12
+              },
+              {
+                "exclusive_end": 42,
+                "slot": "appointment_time",
+                "start": 29
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "March 8th"
+                ],
+                "appointment_time": [
+                  "morning 11:30"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab",
+                  "A J Dental lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "No, make it March 8th in the morning 11:30."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "11:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "11:30 am"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-08"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "next Friday"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 55,
+                "slot": "appointment_time",
+                "start": 47
+              },
+              {
+                "exclusive_end": 43,
+                "slot": "appointment_date",
+                "start": 32
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Confirm the appointment will be next Friday at 11:30 am."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "AFFIRM",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "March 8th",
+                  "next Friday"
+                ],
+                "appointment_time": [
+                  "11:30 am",
+                  "morning 11:30"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab",
+                  "A J Dental lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "NOTIFY_SUCCESS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "BookAppointment",
+              "parameters": {
+                "appointment_date": "2019-03-08",
+                "appointment_time": "11:30",
+                "dentist_name": "A J Dental Lab"
+              }
+            },
+            "service_results": [
+              {
+                "address": "2664 Berryessa Road # 206",
+                "appointment_date": "2019-03-08",
+                "appointment_time": "11:30",
+                "dentist_name": "A J Dental Lab",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-316-8226"
+              }
+            ],
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Appointment was successfully booked."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "March 8th",
+                  "next Friday"
+                ],
+                "appointment_time": [
+                  "11:30 am",
+                  "morning 11:30"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab",
+                  "A J Dental lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Thank you."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQ_MORE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Anything else?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "NEGATE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              },
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "NONE",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "March 8th",
+                  "next Friday"
+                ],
+                "appointment_time": [
+                  "11:30 am",
+                  "morning 11:30"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab",
+                  "A J Dental lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "No, that's all."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Have a good day."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "29_00005",
+    "services": [
+      "Services_2"
+    ],
+    "turns": [
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "FindProvider"
+                ],
+                "slot": "intent",
+                "values": [
+                  "FindProvider"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {}
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "I'd like to find a dentist."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "city",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Which city should I search in?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "San Carlos"
+                ],
+                "slot": "city",
+                "values": [
+                  "San Carlos"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 26,
+                "slot": "city",
+                "start": 16
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "San Carlos"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "I'd like one in San Carlos."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Cofield Marianne"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Cofield Marianne"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "San Carlos"
+                ],
+                "slot": "city",
+                "values": [
+                  "San Carlos"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "San Carlos"
+              }
+            },
+            "service_results": [
+              {
+                "address": "1785 San Carlos Ave # 3",
+                "city": "San Carlos",
+                "dentist_name": "Cofield Marianne",
+                "offers_cosmetic_services": "False",
+                "phone_number": "650-591-0995"
+              },
+              {
+                "address": "1785 San Carlos Avenue # 6",
+                "city": "San Carlos",
+                "dentist_name": "Edwards John G",
+                "offers_cosmetic_services": "False",
+                "phone_number": "650-637-2005"
+              },
+              {
+                "address": "1785 San Carlos Avenue #2b",
+                "city": "San Carlos",
+                "dentist_name": "Ghina Morad",
+                "offers_cosmetic_services": "False",
+                "phone_number": "650-549-1964"
+              },
+              {
+                "address": "1785 San Carlos Avenue #5",
+                "city": "San Carlos",
+                "dentist_name": "Gilman Dental Group/Valerie Gilman",
+                "offers_cosmetic_services": "True",
+                "phone_number": "650-539-4785"
+              },
+              {
+                "address": "1785 San Carlos Ave #1",
+                "city": "San Carlos",
+                "dentist_name": "Hart Brad L",
+                "offers_cosmetic_services": "False",
+                "phone_number": "650-593-7806"
+              },
+              {
+                "address": "1785 San Carlos Avenue",
+                "city": "San Carlos",
+                "dentist_name": "Marenda Ronald E",
+                "offers_cosmetic_services": "False",
+                "phone_number": "650-591-8922"
+              },
+              {
+                "address": "1785 San Carlos Ave # 4",
+                "city": "San Carlos",
+                "dentist_name": "Marlinski Richard J",
+                "offers_cosmetic_services": "False",
+                "phone_number": "650-593-4500"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 26,
+                "slot": "dentist_name",
+                "start": 10
+              },
+              {
+                "exclusive_end": 48,
+                "slot": "city",
+                "start": 38
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "How about Cofield Marianne located in San Carlos?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "San Jose"
+                ],
+                "slot": "city",
+                "values": [
+                  "San Jose"
+                ]
+              },
+              {
+                "act": "REQUEST_ALTS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 54,
+                "slot": "city",
+                "start": 46
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "San Jose"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "I'd like somewhere else. Find me something in San Jose."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "A J Dental Lab"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "A J Dental Lab"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "San Jose"
+                ],
+                "slot": "city",
+                "values": [
+                  "San Jose"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "San Jose"
+              }
+            },
+            "service_results": [
+              {
+                "address": "2664 Berryessa Road # 206",
+                "city": "San Jose",
+                "dentist_name": "A J Dental Lab",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-316-8226"
+              },
+              {
+                "address": "2664 Berryessa Road # 205",
+                "city": "San Jose",
+                "dentist_name": "A-1 Dental Care",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-258-6669"
+              },
+              {
+                "address": "2664 Berryessa Road # 212",
+                "city": "San Jose",
+                "dentist_name": "Abad Dental Office",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-272-3809"
+              },
+              {
+                "address": "2664 Berryessa Road # 202",
+                "city": "San Jose",
+                "dentist_name": "Aitchison, Bernard",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-259-1632"
+              },
+              {
+                "address": "5595 Winfield Boulevard # 102",
+                "city": "San Jose",
+                "dentist_name": "Almaden Dental Care",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-224-5200"
+              },
+              {
+                "address": "5710 Cahalan Avenue # 8L",
+                "city": "San Jose",
+                "dentist_name": "Alpha Dental",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-578-4600"
+              },
+              {
+                "address": "5150 Graves Avenue # 11E",
+                "city": "San Jose",
+                "dentist_name": "Arts Of Dentistry",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-873-7737"
+              },
+              {
+                "address": "2664 Berryessa Road",
+                "city": "San Jose",
+                "dentist_name": "Bautista Maximilian",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-272-2330"
+              },
+              {
+                "address": "2664 Berryessa Road # 102",
+                "city": "San Jose",
+                "dentist_name": "Belle Dental",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-254-0888"
+              },
+              {
+                "address": "2664 Berryessa Road # 106",
+                "city": "San Jose",
+                "dentist_name": "Berryessa Oral Surgery Spec",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-729-9000"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 24,
+                "slot": "dentist_name",
+                "start": 10
+              },
+              {
+                "exclusive_end": 36,
+                "slot": "city",
+                "start": 28
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "How about A J Dental Lab in San Jose?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "SELECT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes please"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER_INTENT",
+                "canonical_values": [
+                  "BookAppointment"
+                ],
+                "slot": "intent",
+                "values": [
+                  "BookAppointment"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Would you like to book an appointment here?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "AFFIRM_INTENT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes, I'd like to book please."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "appointment_time",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "What time would you like to book your appointment?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "14:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "half past 2 in the afternoon"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 65,
+                "slot": "appointment_time",
+                "start": 37
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_time": [
+                  "half past 2 in the afternoon"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Is there an appointment available at half past 2 in the afternoon?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "appointment_date",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "What date would you like to book it on?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-02"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "Saturday this week"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 18,
+                "slot": "appointment_date",
+                "start": 0
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "Saturday this week"
+                ],
+                "appointment_time": [
+                  "half past 2 in the afternoon"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Saturday this week."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "A J Dental Lab"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "A J Dental Lab"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "14:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "2:30 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-02"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "tomorrow"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 56,
+                "slot": "dentist_name",
+                "start": 42
+              },
+              {
+                "exclusive_end": 67,
+                "slot": "appointment_time",
+                "start": 60
+              },
+              {
+                "exclusive_end": 76,
+                "slot": "appointment_date",
+                "start": 68
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "So you'd like to book an appointment with A J Dental Lab at 2:30 pm tomorrow?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-08"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "the 8th"
+                ]
+              },
+              {
+                "act": "NEGATE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 22,
+                "slot": "appointment_date",
+                "start": 15
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "the 8th"
+                ],
+                "appointment_time": [
+                  "2:30 pm",
+                  "half past 2 in the afternoon"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "No, book it on the 8th instead."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "14:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "2:30 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-08"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "next Friday"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 46,
+                "slot": "appointment_time",
+                "start": 39
+              },
+              {
+                "exclusive_end": 58,
+                "slot": "appointment_date",
+                "start": 47
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "So you'd like the appointment to be at 2:30 pm next Friday?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "12:00"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "12 pm"
+                ]
+              },
+              {
+                "act": "NEGATE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 19,
+                "slot": "appointment_time",
+                "start": 14
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "next Friday",
+                  "the 8th"
+                ],
+                "appointment_time": [
+                  "12 pm"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "No, how about 12 pm?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "12:00"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "12 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-08"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "next Friday"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 57,
+                "slot": "appointment_time",
+                "start": 52
+              },
+              {
+                "exclusive_end": 69,
+                "slot": "appointment_date",
+                "start": 58
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Can you confirm you'd like the appointment to be at 12 pm next Friday?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "AFFIRM",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "next Friday",
+                  "the 8th"
+                ],
+                "appointment_time": [
+                  "12 pm"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes, that's great."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "NOTIFY_SUCCESS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "BookAppointment",
+              "parameters": {
+                "appointment_date": "2019-03-08",
+                "appointment_time": "12:00",
+                "dentist_name": "A J Dental Lab"
+              }
+            },
+            "service_results": [
+              {
+                "address": "2664 Berryessa Road # 206",
+                "appointment_date": "2019-03-08",
+                "appointment_time": "12:00",
+                "dentist_name": "A J Dental Lab",
+                "offers_cosmetic_services": "False",
+                "phone_number": "408-316-8226"
+              }
+            ],
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Congratulations, your dentist appointment has been booked successfully."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              },
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "next Friday",
+                  "the 8th"
+                ],
+                "appointment_time": [
+                  "12 pm"
+                ],
+                "city": [
+                  "San Jose"
+                ],
+                "dentist_name": [
+                  "A J Dental Lab"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Thank you, thats all for now."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Thank you, have a great day."
+      }
+    ]
+  },
+  {
+    "dialogue_id": "29_00006",
+    "services": [
+      "Services_2"
+    ],
+    "turns": [
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "FindProvider"
+                ],
+                "slot": "intent",
+                "values": [
+                  "FindProvider"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {}
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Can you find me a dentist?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "city",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Which city should i search in?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "Vallejo"
+                ],
+                "slot": "city",
+                "values": [
+                  "Vallejo"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 17,
+                "slot": "city",
+                "start": 10
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Vallejo"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Search in Vallejo"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Dr Pucan Dental Office"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Dr Pucan Dental Office"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Vallejo"
+                ],
+                "slot": "city",
+                "values": [
+                  "Vallejo"
+                ]
+              },
+              {
+                "act": "INFORM_COUNT",
+                "canonical_values": [
+                  "3"
+                ],
+                "slot": "count",
+                "values": [
+                  "3"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "Vallejo"
+              }
+            },
+            "service_results": [
+              {
+                "address": "2143 Springs Road # 51",
+                "city": "Vallejo",
+                "dentist_name": "Dr Pucan Dental Office",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-552-3952"
+              },
+              {
+                "address": "4300 Sonoma Boulevard",
+                "city": "Vallejo",
+                "dentist_name": "Dr. Eugene H. Burton Iii",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-643-2500"
+              },
+              {
+                "address": "96 Springstowne Center",
+                "city": "Vallejo",
+                "dentist_name": "Dr. Maria Theresa V. Chua",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-649-0120"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 63,
+                "slot": "dentist_name",
+                "start": 41
+              },
+              {
+                "exclusive_end": 29,
+                "slot": "city",
+                "start": 22
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "I found 3 dentists in Vallejo. How about Dr Pucan Dental Office?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "Fremont"
+                ],
+                "slot": "city",
+                "values": [
+                  "Fremont"
+                ]
+              },
+              {
+                "act": "REQUEST_ALTS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 28,
+                "slot": "city",
+                "start": 21
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Fremont"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Find me something in Fremont"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Centerville Dental Care"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Centerville Dental Care"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Fremont"
+                ],
+                "slot": "city",
+                "values": [
+                  "Fremont"
+                ]
+              },
+              {
+                "act": "INFORM_COUNT",
+                "canonical_values": [
+                  "10"
+                ],
+                "slot": "count",
+                "values": [
+                  "10"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "Fremont"
+              }
+            },
+            "service_results": [
+              {
+                "address": "37149 Fremont Boulevard",
+                "city": "Fremont",
+                "dentist_name": "Centerville Dental Care",
+                "offers_cosmetic_services": "True",
+                "phone_number": "510-797-6000"
+              },
+              {
+                "address": "3200 Mowry Avenue # G",
+                "city": "Fremont",
+                "dentist_name": "Dr. John Y. Park",
+                "offers_cosmetic_services": "False",
+                "phone_number": "510-623-9497"
+              },
+              {
+                "address": "39150 Sundale Drive",
+                "city": "Fremont",
+                "dentist_name": "Dr. Kwang H. Kim",
+                "offers_cosmetic_services": "False",
+                "phone_number": "415-517-1224"
+              },
+              {
+                "address": "3618 Thornton Avenue",
+                "city": "Fremont",
+                "dentist_name": "Dr. Stephen T. Fan",
+                "offers_cosmetic_services": "False",
+                "phone_number": "510-797-2271"
+              },
+              {
+                "address": "3660 Peralta Boulevard",
+                "city": "Fremont",
+                "dentist_name": "Golden Life Dental Lab",
+                "offers_cosmetic_services": "False",
+                "phone_number": "510-793-1823"
+              },
+              {
+                "address": "39210 State Street # 214A",
+                "city": "Fremont",
+                "dentist_name": "Hahn Eun",
+                "offers_cosmetic_services": "False",
+                "phone_number": "510-797-3636"
+              },
+              {
+                "address": "2211 Parkside Drive",
+                "city": "Fremont",
+                "dentist_name": "Hasaimoto Family Dentistry",
+                "offers_cosmetic_services": "False",
+                "phone_number": "510-793-6954"
+              },
+              {
+                "address": "2211 Parkside Drive",
+                "city": "Fremont",
+                "dentist_name": "Lusch Roger P",
+                "offers_cosmetic_services": "False",
+                "phone_number": "510-793-6688"
+              },
+              {
+                "address": "2188 Peralta Boulevard # D",
+                "city": "Fremont",
+                "dentist_name": "R. Michael Alvarez",
+                "offers_cosmetic_services": "False",
+                "phone_number": "510-713-6790"
+              },
+              {
+                "address": "2211 Parkside Drive",
+                "city": "Fremont",
+                "dentist_name": "Steven C Fong",
+                "offers_cosmetic_services": "False",
+                "phone_number": "510-792-4332"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 65,
+                "slot": "dentist_name",
+                "start": 42
+              },
+              {
+                "exclusive_end": 30,
+                "slot": "city",
+                "start": 23
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "I found 10 dentists in Fremont. How about Centerville Dental Care?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST_ALTS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Fremont"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Find me someone else"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Dr. John Y. Park"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Dr. John Y. Park"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Fremont"
+                ],
+                "slot": "city",
+                "values": [
+                  "Fremont"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 26,
+                "slot": "dentist_name",
+                "start": 10
+              },
+              {
+                "exclusive_end": 37,
+                "slot": "city",
+                "start": 30
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "How about Dr. John Y. Park in Fremont"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "BookAppointment"
+                ],
+                "slot": "intent",
+                "values": [
+                  "BookAppointment"
+                ]
+              },
+              {
+                "act": "SELECT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Fremont"
+                ],
+                "dentist_name": [
+                  "Dr. John Y. Park"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes, I like that one."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "appointment_date",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "What date would you like to book your appointment"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-01"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "later today"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 19,
+                "slot": "appointment_date",
+                "start": 8
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "later today"
+                ],
+                "city": [
+                  "Fremont"
+                ],
+                "dentist_name": [
+                  "Dr. John Y. Park"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "book it later today"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "appointment_time",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "What time work for you?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "11:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "11:30 am"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 18,
+                "slot": "appointment_time",
+                "start": 10
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "later today"
+                ],
+                "appointment_time": [
+                  "11:30 am"
+                ],
+                "city": [
+                  "Fremont"
+                ],
+                "dentist_name": [
+                  "Dr. John Y. Park"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "How about 11:30 am?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "Dr. John Y. Park"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Dr. John Y. Park"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "11:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "11:30 am"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-01"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "today"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 76,
+                "slot": "dentist_name",
+                "start": 60
+              },
+              {
+                "exclusive_end": 106,
+                "slot": "appointment_time",
+                "start": 98
+              },
+              {
+                "exclusive_end": 94,
+                "slot": "appointment_date",
+                "start": 89
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Please confirm the following details: book appointment with Dr. John Y. Park appointment today at 11:30 am"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "offers_cosmetic_services",
+                "values": []
+              },
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "address",
+                "values": []
+              },
+              {
+                "act": "AFFIRM",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [
+                "address",
+                "offers_cosmetic_services"
+              ],
+              "slot_values": {
+                "appointment_date": [
+                  "later today",
+                  "today"
+                ],
+                "appointment_time": [
+                  "11:30 am"
+                ],
+                "city": [
+                  "Fremont"
+                ],
+                "dentist_name": [
+                  "Dr. John Y. Park"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes. Where are they located and do they do cosmetic services?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "False"
+                ],
+                "slot": "offers_cosmetic_services",
+                "values": [
+                  "False"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "3200 Mowry Avenue # G"
+                ],
+                "slot": "address",
+                "values": [
+                  "3200 Mowry Avenue # G"
+                ]
+              },
+              {
+                "act": "NOTIFY_SUCCESS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "BookAppointment",
+              "parameters": {
+                "appointment_date": "2019-03-01",
+                "appointment_time": "11:30",
+                "dentist_name": "Dr. John Y. Park"
+              }
+            },
+            "service_results": [
+              {
+                "address": "3200 Mowry Avenue # G",
+                "appointment_date": "2019-03-01",
+                "appointment_time": "11:30",
+                "dentist_name": "Dr. John Y. Park",
+                "offers_cosmetic_services": "False",
+                "phone_number": "510-623-9497"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 150,
+                "slot": "address",
+                "start": 129
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Congratulations, your appointment was successfully booked. Unfortunately they don't offer cosmetic services. They are located at 3200 Mowry Avenue # G"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              },
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "later today",
+                  "today"
+                ],
+                "appointment_time": [
+                  "11:30 am"
+                ],
+                "city": [
+                  "Fremont"
+                ],
+                "dentist_name": [
+                  "Dr. John Y. Park"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Thank you, that's all I need."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Have a good day"
+      }
+    ]
+  },
+  {
+    "dialogue_id": "29_00007",
+    "services": [
+      "Services_2"
+    ],
+    "turns": [
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "Sebastopol"
+                ],
+                "slot": "city",
+                "values": [
+                  "Sebastopol"
+                ]
+              },
+              {
+                "act": "INFORM_INTENT",
+                "canonical_values": [
+                  "FindProvider"
+                ],
+                "slot": "intent",
+                "values": [
+                  "FindProvider"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 204,
+                "slot": "city",
+                "start": 194
+              }
+            ],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Sebastopol"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "I need to go to a dentist to have my teeth cleaned. I also want an exam to assess the possibility of repairing two chipped front teeth. Would you please see if there is a dentist I can visit in Sebastopol?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Gerald E. Dixon Scott E. Dixon"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Gerald e. Dixon Scott E. Dixon"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Sebastopol"
+                ],
+                "slot": "city",
+                "values": [
+                  "Sebastopol"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "FindProvider",
+              "parameters": {
+                "city": "Sebastopol"
+              }
+            },
+            "service_results": [
+              {
+                "address": "6800 Palm Avenue e",
+                "city": "Sebastopol",
+                "dentist_name": "Gerald E. Dixon Scott E. Dixon",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-823-8529"
+              },
+              {
+                "address": "6800 Palm Avenue",
+                "city": "Sebastopol",
+                "dentist_name": "Stephanie Kahle",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-823-7417"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 51,
+                "slot": "dentist_name",
+                "start": 21
+              },
+              {
+                "exclusive_end": 97,
+                "slot": "city",
+                "start": 87
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "The dental office of Gerald e. Dixon Scott E. Dixon comes up. The office is located in Sebastopol. Would you like more information on that dentist?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST_ALTS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Sebastopol"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Nope, thanks. Do you show another dentist located in Sebastopol?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Stephanie Kahle"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Stephanie Kahle"
+                ]
+              },
+              {
+                "act": "OFFER",
+                "canonical_values": [
+                  "Sebastopol"
+                ],
+                "slot": "city",
+                "values": [
+                  "Sebastopol"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 41,
+                "slot": "dentist_name",
+                "start": 26
+              },
+              {
+                "exclusive_end": 86,
+                "slot": "city",
+                "start": 76
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Yes, there is the dentist Stephanie Kahle. This dental office is located in Sebastopol."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "SELECT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "FindProvider",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Sebastopol"
+                ],
+                "dentist_name": [
+                  "Stephanie Kahle"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Okay, that dentist is the one I will choose."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "OFFER_INTENT",
+                "canonical_values": [
+                  "BookAppointment"
+                ],
+                "slot": "intent",
+                "values": [
+                  "BookAppointment"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "A visit to dentist Stephanie Kahle's office can be set up for you. Would you like to make an appointment now?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "AFFIRM_INTENT",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "city": [
+                  "Sebastopol"
+                ],
+                "dentist_name": [
+                  "Stephanie Kahle"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes, please set up an appointment for me now?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "appointment_time",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "What is the time you want for the appointment?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "10:30"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "10:30"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 8,
+                "slot": "appointment_time",
+                "start": 3
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_time": [
+                  "10:30"
+                ],
+                "city": [
+                  "Sebastopol"
+                ],
+                "dentist_name": [
+                  "Stephanie Kahle"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Is 10:30 an available time for the appointment?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "appointment_date",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Also, on what date do you want to go to that dentist's office?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-10"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "March 10th"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "13:00"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "one in the afternoon"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 48,
+                "slot": "appointment_date",
+                "start": 38
+              },
+              {
+                "exclusive_end": 73,
+                "slot": "appointment_time",
+                "start": 53
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "March 10th"
+                ],
+                "appointment_time": [
+                  "one in the afternoon"
+                ],
+                "city": [
+                  "Sebastopol"
+                ],
+                "dentist_name": [
+                  "Stephanie Kahle"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Okay, let's set up an appointment for March 10th. Is one in the afternoon available on that day?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "Stephanie Kahle"
+                ],
+                "slot": "dentist_name",
+                "values": [
+                  "Stephanie Kahle"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "13:00"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "1 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-10"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "March 10th"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 69,
+                "slot": "dentist_name",
+                "start": 54
+              },
+              {
+                "exclusive_end": 77,
+                "slot": "appointment_time",
+                "start": 73
+              },
+              {
+                "exclusive_end": 91,
+                "slot": "appointment_date",
+                "start": 81
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Yes, I can set up a dental appointment for you to see Stephanie Kahle at 1 pm on March 10th. Please confirm."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "2019-03-08"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "Friday next week"
+                ]
+              },
+              {
+                "act": "NEGATE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 72,
+                "slot": "appointment_date",
+                "start": 56
+              }
+            ],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "Friday next week"
+                ],
+                "appointment_time": [
+                  "1 pm",
+                  "one in the afternoon"
+                ],
+                "city": [
+                  "Sebastopol"
+                ],
+                "dentist_name": [
+                  "Stephanie Kahle"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Oh my, sorry, I need to change that appointment time to Friday next week, please."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "13:00"
+                ],
+                "slot": "appointment_time",
+                "values": [
+                  "1 pm"
+                ]
+              },
+              {
+                "act": "CONFIRM",
+                "canonical_values": [
+                  "2019-03-08"
+                ],
+                "slot": "appointment_date",
+                "values": [
+                  "next Friday"
+                ]
+              }
+            ],
+            "service": "Services_2",
+            "slots": [
+              {
+                "exclusive_end": 61,
+                "slot": "appointment_time",
+                "start": 57
+              },
+              {
+                "exclusive_end": 76,
+                "slot": "appointment_date",
+                "start": 65
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "All right. Your dental appointment will be scheduled for 1 pm on next Friday. Please confirm."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "address",
+                "values": []
+              },
+              {
+                "act": "REQUEST",
+                "canonical_values": [],
+                "slot": "offers_cosmetic_services",
+                "values": []
+              },
+              {
+                "act": "AFFIRM",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [
+                "address",
+                "offers_cosmetic_services"
+              ],
+              "slot_values": {
+                "appointment_date": [
+                  "Friday next week",
+                  "next Friday"
+                ],
+                "appointment_time": [
+                  "1 pm",
+                  "one in the afternoon"
+                ],
+                "city": [
+                  "Sebastopol"
+                ],
+                "dentist_name": [
+                  "Stephanie Kahle"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Yes, confirm. Now, what is the address of the dental office? Also, does the dentist perform cosmetic procedures?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "False"
+                ],
+                "slot": "offers_cosmetic_services",
+                "values": [
+                  "False"
+                ]
+              },
+              {
+                "act": "INFORM",
+                "canonical_values": [
+                  "6800 Palm Avenue"
+                ],
+                "slot": "address",
+                "values": [
+                  "6800 Palm Avenue"
+                ]
+              },
+              {
+                "act": "NOTIFY_SUCCESS",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "service_call": {
+              "method": "BookAppointment",
+              "parameters": {
+                "appointment_date": "2019-03-08",
+                "appointment_time": "13:00",
+                "dentist_name": "Stephanie Kahle"
+              }
+            },
+            "service_results": [
+              {
+                "address": "6800 Palm Avenue",
+                "appointment_date": "2019-03-08",
+                "appointment_time": "13:00",
+                "dentist_name": "Stephanie Kahle",
+                "offers_cosmetic_services": "False",
+                "phone_number": "707-823-7417"
+              }
+            ],
+            "slots": [
+              {
+                "exclusive_end": 183,
+                "slot": "address",
+                "start": 167
+              }
+            ]
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Confirmed. Your dental appointment is set for Friday of next week at 1 pm. However, that dentist does not perform cosmetic procedures. The dentist's office address is 6800 Palm Avenue."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "BookAppointment",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "Friday next week",
+                  "next Friday"
+                ],
+                "appointment_time": [
+                  "1 pm",
+                  "one in the afternoon"
+                ],
+                "city": [
+                  "Sebastopol"
+                ],
+                "dentist_name": [
+                  "Stephanie Kahle"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "Okay, I really appreciate your assistance with making the appointment for me."
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "REQ_MORE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "Would you like assistance with anything else at this time?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "NEGATE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              },
+              {
+                "act": "THANK_YOU",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": [],
+            "state": {
+              "active_intent": "NONE",
+              "requested_slots": [],
+              "slot_values": {
+                "appointment_date": [
+                  "Friday next week",
+                  "next Friday"
+                ],
+                "appointment_time": [
+                  "1 pm",
+                  "one in the afternoon"
+                ],
+                "city": [
+                  "Sebastopol"
+                ],
+                "dentist_name": [
+                  "Stephanie Kahle"
+                ]
+              }
+            }
+          }
+        ],
+        "speaker": "USER",
+        "utterance": "No, thank you. That is all the assistance I need right now?"
+      },
+      {
+        "frames": [
+          {
+            "actions": [
+              {
+                "act": "GOODBYE",
+                "canonical_values": [],
+                "slot": "",
+                "values": []
+              }
+            ],
+            "service": "Services_2",
+            "slots": []
+          }
+        ],
+        "speaker": "SYSTEM",
+        "utterance": "You're welcome. This task is completed. Enjoy the rest of your day."
+      }
+    ]
+  }
+]
