@@ -1,1 +1,1 @@
-This repository features a series of projects dedicated to Textual Data Analysis using Python. The notebooks cover the end-to-end pipeline of Natural Language Processing (NLP), from raw text cleaning and tokenization to advanced sentiment analysis and topic modeling.
+This repository features a series of projects dedicated to Textual Data Analysis using Python. The ".ipynb" notebooks cover the end-to-end pipeline of Natural Language Processing (NLP), from raw text cleaning and tokenization to advanced sentiment analysis and topic modeling.
